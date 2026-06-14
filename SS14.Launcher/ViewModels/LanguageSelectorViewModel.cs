@@ -73,7 +73,7 @@ public sealed class LanguageSelectorViewModel : ObservableRecipient
 
     public void OnHelpTranslateButtonPressed()
     {
-        Helpers.OpenUri(new Uri(ConfigConstants.TranslateUrl));
+        //Helpers.OpenUri(new Uri(ConfigConstants.TranslateUrl));
     }
 
     public void OnSaveButtonPressed()

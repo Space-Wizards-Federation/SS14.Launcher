@@ -28,9 +28,9 @@
                   Command="{Binding OnCancelButtonPressed}">
             <v:IconLabel Icon="/Assets/cross.png" Content="{loc:Loc language-selector-cancel}" />
           </Button>
-          <Button Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" Classes="OpenRight"
+          <!--<Button Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" Classes="OpenRight"
                   Content="{loc:Loc language-selector-help-translate}"
-                  Command="{Binding OnHelpTranslateButtonPressed}" />
+                  Command="{Binding OnHelpTranslateButtonPressed}" /> Docs being moved plus this link said "We don't support this :)" -->
         </Grid>
         <!-- Main contents -->
         <ScrollViewer Margin="2">

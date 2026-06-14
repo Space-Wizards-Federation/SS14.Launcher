@@ -5,7 +5,7 @@ namespace SS14.Launcher;
 
 public static class ConfigConstants
 {
-    public const string CurrentLauncherVersion = "61";
+    public const string CurrentLauncherVersion = "62";
     public static readonly bool DoVersionCheck = true;
 
     // Refresh login tokens if they're within <this much> of expiry.
@@ -26,19 +26,19 @@ public static class ConfigConstants
     // Amount of time to wait to let a redialling client properly die
     public const int LauncherCommandsRedialWaitTimeout = 1000;
 
-    private static readonly UrlFallbackSetStats StatsHubInfra = new(2);
+    private static readonly UrlFallbackSetStats StatsHubInfra = new(1);
 
-    public static readonly UrlFallbackSet AuthUrl = new(["https://auth.spacestation14.com/", "https://auth.fallback.spacestation14.com/"], StatsHubInfra);
-    public static readonly UrlFallbackSet[] DefaultHubUrls = [new(["https://hub.spacestation14.com/", "https://hub.fallback.spacestation14.com/"], StatsHubInfra)];
-    public const string DiscordUrl = "https://discord.ss14.io/";
-    public const string AccountBaseUrl = "https://account.spacestation14.com/Identity/Account/";
+    public static readonly UrlFallbackSet AuthUrl = new(["https://auth.playss14.com/"], StatsHubInfra);
+    public static readonly UrlFallbackSet[] DefaultHubUrls = [new(["https://hub.playss14.com/"], StatsHubInfra)];
+    public const string DiscordUrl = "https://discord.gg/ss14";
+    public const string AccountBaseUrl = "https://account.playss14.com/Identity/Account/";
     public const string AccountManagementUrl = $"{AccountBaseUrl}Manage";
     public const string AccountRegisterUrl = $"{AccountBaseUrl}Register";
     public const string AccountResendConfirmationUrl = $"{AccountBaseUrl}ResendEmailConfirmation";
-    public const string WebsiteUrl = "https://spacestation14.com";
-    public const string DownloadUrl = "https://spacestation14.com/about/nightlies/";
-    public const string NewsFeedUrl = "https://spacestation14.com/post/index.xml";
-    public const string TranslateUrl = "https://docs.spacestation14.com/en/general-development/contributing-translations.html";
+    public const string WebsiteUrl = "https://playss14.com";
+    public const string DownloadUrl = "https://playss14.com/about/nightlies/";
+    public const string NewsFeedUrl = "https://playss14.com/post/index.xml";
+    //public const string TranslateUrl = "https://docs.playss14.com/en/general-development/contributing-translations.html";
 
     private static readonly UrlFallbackSet RobustBuildsBaseUrl = new([
         "https://robust-builds.cdn.spacestation14.com/",
@@ -46,8 +46,7 @@ public static class ConfigConstants
     ]);
 
     private static readonly UrlFallbackSet LauncherDataBaseUrl = new([
-        "https://launcher-data.cdn.spacestation14.com/",
-        "https://launcher-data.fallback.cdn.spacestation14.com/"
+        "https://launcher-data.cdn.playss14.com/"
     ]);
 
     public static readonly UrlFallbackSet RobustBuildsManifest = RobustBuildsBaseUrl + "manifest.json";

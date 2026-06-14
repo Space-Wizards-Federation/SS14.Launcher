@@ -24,6 +24,7 @@ internal static class HttpSelfTest
 {
     private static int _httpSelfTestInitiated = 0;
 
+    // TODO: Move these to the correct urls! See #1 for details.
     private static readonly string[] SelfTestUrls =
     {
         "http://central.spacestation14.io/launcher_version.txt",
