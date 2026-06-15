@@ -46,6 +46,7 @@ public static class ConfigConstants
     ]);
 
     private static readonly UrlFallbackSet LauncherDataBaseUrl = new([
+        "https://launcher-data.playss14.com/",
         "https://launcher-data.cdn.playss14.com/"
     ]);
 
