@@ -64,7 +64,7 @@ public static class ConfigConstants
 
     static ConfigConstants()
     {
-        var envVarAuthUrl = Environment.GetEnvironmentVariable("SS14_LAUNCHER_OVERRIDE_AUTH");
+        var envVarAuthUrl = Environment.GetEnvironmentVariable("WIZDEN_LAUNCHER_OVERRIDE_AUTH");
         if (!string.IsNullOrEmpty(envVarAuthUrl))
             AuthUrl = new UrlFallbackSet([envVarAuthUrl]);
     }
