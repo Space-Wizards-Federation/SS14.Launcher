@@ -52,8 +52,8 @@
                    Margin="8" />
 
         <StackPanel Orientation="Horizontal" Margin="0 0 8 0">
-          <Button Click="SetFunkyAuth" Content="{loc:Loc tab-options-set-funky}" Margin="0 4 4 4" />
           <Button Click="SetWizDenAuth" Content="{loc:Loc tab-options-set-wizden}" Margin="0 4 0 4" />
+          <Button Click="SetFunkyAuth" Content="{loc:Loc tab-options-set-funky}" Margin="0 4 4 4" />
         </StackPanel>
 
         <StackPanel Orientation="Horizontal" Margin="0 0 8 0">
