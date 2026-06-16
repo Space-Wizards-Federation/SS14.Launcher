@@ -5,7 +5,7 @@ namespace SS14.Launcher;
 
 public static class ConfigConstants
 {
-    public const string CurrentLauncherVersion = "62";
+    public const string CurrentLauncherVersion = "63";
     public static readonly bool DoVersionCheck = true;
 
     // Refresh login tokens if they're within <this much> of expiry.
@@ -41,8 +41,7 @@ public static class ConfigConstants
     //public const string TranslateUrl = "https://docs.playss14.com/en/general-development/contributing-translations.html";
 
     private static readonly UrlFallbackSet RobustBuildsBaseUrl = new([
-        "https://robust-builds.cdn.spacestation14.com/",
-        "https://robust-builds.fallback.cdn.spacestation14.com/"
+        "https://robust-builds.playss14.com/"
     ]);
 
     private static readonly UrlFallbackSet LauncherDataBaseUrl = new([
